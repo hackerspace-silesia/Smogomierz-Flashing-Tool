@@ -49,4 +49,4 @@ dist: all $(PLATFORM_DEPS)
 	$(PY) -m PyInstaller -y luftdaten-tool.spec
 
 dmg: dist
-	dmgbuild -s deploy/dmgbuild_settings.py -D app=dist/Luftdaten.info\ Flashing\ Tool.app "Luftdaten.info Flashing Tool" dist/luftdaten-tool.dmg
+	dmgbuild -s deploy/dmgbuild_settings.py -D app=dist/Smogomierz\ Flashing\ Tool.app "Smogomierz Flashing Tool" dist/smogomierz-tool.dmg

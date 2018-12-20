@@ -1,4 +1,4 @@
-luftdaten.info flashing tool
+Smogomierz flashing tool
 ============================
 
 Binary builds
