@@ -317,7 +317,7 @@ class MainWindow(QtWidgets.QMainWindow, mainwindow.Ui_MainWindow):
 
     def on_zeroconf_discovered(self, name, address, info):
         """Called on every zeroconf discovered device"""
-        if name.startswith('Feinstaubsensor'):
+        if name.startswith('Smogomierz'):
             item = QtWidgets.QListWidgetItem('{}: {}'.format(address, name.split('.')[0]))
             item.setData(ROLE_DEVICE, 'http://{}:{}'.format(address, info.port))
             self.discoveryList.addItem(item)
