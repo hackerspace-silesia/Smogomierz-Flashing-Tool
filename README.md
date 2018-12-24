@@ -48,7 +48,7 @@ order to install these use the following command:
 To manage dynamic UI and translation binaries generation we use a very simple
 GNU make-based build system.
 
-To simply build everything needed to run `luftdaten-tool.py` run:
+To simply build everything needed to run `smogomierz-tool.py` run:
 
     make
 

@@ -11,15 +11,15 @@ import logging
 import requests
 from esptool import ESPLoader
 
-import luftdatentool
-from luftdatentool.qtvariant import QtGui, QtCore, QtWidgets
-from luftdatentool.utils import QuickThread
-from luftdatentool.workers import PortDetectThread, FirmwareListThread, \
+import smogomierztool
+from smogomierztool.qtvariant import QtGui, QtCore, QtWidgets
+from smogomierztool.utils import QuickThread
+from smogomierztool.workers import PortDetectThread, FirmwareListThread, \
     ZeroconfDiscoveryThread
 
 from gui import mainwindow
 
-from luftdatentool.consts import UPDATE_REPOSITORY, ALLOWED_PROTO, \
+from smogomierztool.consts import UPDATE_REPOSITORY, ALLOWED_PROTO, \
     PREFERED_PORTS, ROLE_DEVICE, DRIVERS_URL
 
 if getattr(sys, 'frozen', False):
@@ -91,12 +91,12 @@ class MainWindow(QtWidgets.QMainWindow, mainwindow.Ui_MainWindow):
 
     @property
     def version(self):
-        return luftdatentool.__version__
+        return smogomierztool.__version__
 
     @property
     def build_id(self):
         try:
-            from luftdatentool._buildid import commit, builddate
+            from smogomierztool._buildid import commit, builddate
         except ImportError:
             import datetime
             commit = 'devel'
@@ -318,6 +318,10 @@ class MainWindow(QtWidgets.QMainWindow, mainwindow.Ui_MainWindow):
     def on_zeroconf_discovered(self, name, address, info):
         """Called on every zeroconf discovered device"""
         if name.startswith('Smogomierz'):
+            item = QtWidgets.QListWidgetItem('{}: {}'.format(address, name.split('.')[0]))
+            item.setData(ROLE_DEVICE, 'http://{}:{}'.format(address, info.port))
+            self.discoveryList.addItem(item)
+        if name.startswith('smogomierz'):
             item = QtWidgets.QListWidgetItem('{}: {}'.format(address, name.split('.')[0]))
             item.setData(ROLE_DEVICE, 'http://{}:{}'.format(address, info.port))
             self.discoveryList.addItem(item)

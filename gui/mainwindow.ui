@@ -17,7 +17,7 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>Luftdaten.info Flashing Tool (v{version})</string>
+   <string>Smogomierz Flashing Tool (v{version})</string>
   </property>
   <property name="windowIcon">
    <iconset>
@@ -288,7 +288,7 @@
            </font>
           </property>
           <property name="text">
-           <string>&lt;b&gt;Luftdaten.info Flashing Tool&lt;/b&gt;&lt;br/&gt;Build {build_id}</string>
+           <string>&lt;b&gt;Smogomierz Flashing Tool&lt;/b&gt;&lt;br/&gt;Build {build_id}</string>
           </property>
          </widget>
         </item>
@@ -314,7 +314,7 @@
         <item row="2" column="0" colspan="2">
          <widget class="QLabel" name="label_8">
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Developed by &lt;a href=&quot;https://inf.re/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Piotr Dobrowolski&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;This software is released under the terms of MIT license. No warranty is provided.&lt;/p&gt;&lt;p&gt;For newest release see: &lt;a href=&quot;https://d.inf.re/luftdaten/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://d.inf.re/luftdaten/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Developed by &lt;a href=&quot;https://hs-silesia.pl/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Hackerspace Silesia&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;This software is released under the terms of MIT license. No warranty is provided.&lt;/p&gt;&lt;p&gt;For newest release see: &lt;a href=&quot;https://github.com/hackerspace-silesia/airrohr-firmware-flasher/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/hackerspace-silesia/airrohr-firmware-flasher/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="textFormat">
            <enum>Qt::RichText</enum>
