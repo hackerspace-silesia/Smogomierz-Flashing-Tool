@@ -4,10 +4,8 @@ from .qtvariant import QtCore
 
 
 # Firmware update repository
-# UPDATE_REPOSITORY = 'https://www.madavi.de/sensor/update/data/' #Luftdaten Server
-UPDATE_REPOSITORY = 'http://cluster003.ovh.net/~haetlpva/blazej/bfaliszek/Smogomierz/firmware/'
-
 #UPDATE_REPOSITORY = 'https://raw.githubusercontent.com/hackerspace-silesia/Smogomierz/blob/dev/firmware/'
+UPDATE_REPOSITORY = 'http://smogomierz.hs-silesia.pl/firmware/'
 
 # URI prefixes (protocol parts, essentially) to be downloaded using requests
 ALLOWED_PROTO = ('http://', 'https://')
