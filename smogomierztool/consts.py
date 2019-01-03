@@ -6,6 +6,8 @@ from .qtvariant import QtCore
 # Firmware update repository
 #UPDATE_REPOSITORY = 'https://raw.githubusercontent.com/hackerspace-silesia/Smogomierz/blob/dev/firmware/'
 UPDATE_REPOSITORY = 'http://smogomierz.hs-silesia.pl/firmware/'
+#UPDATE_REPOSITORY = 'https://smogomierz.hs-silesia.pl/firmware/'
+
 
 # URI prefixes (protocol parts, essentially) to be downloaded using requests
 ALLOWED_PROTO = ('http://', 'https://')

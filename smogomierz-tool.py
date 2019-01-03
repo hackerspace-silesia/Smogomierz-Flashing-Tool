@@ -9,7 +9,7 @@ import zlib
 import logging
 
 import requests
-from esptool import ESPLoader
+from esptool import ESPLoader, erase_flash
 
 import smogomierztool
 from smogomierztool.qtvariant import QtGui, QtCore, QtWidgets
@@ -297,6 +297,19 @@ class MainWindow(QtWidgets.QMainWindow, mainwindow.Ui_MainWindow):
             'Finished in {time:.2f} seconds. Sensor ID: {sensor_id}').format(
                 time=t, sensor_id=esp.chip_id()), 100)
 
+    @QuickThread.wrap
+    def erase_board(self, progress, device, baudrate=460800):
+
+        progress.emit(self.tr('Connecting...'), 0)
+        init_baud = min(ESPLoader.ESP_ROM_BAUD, baudrate)
+        esp = ESPLoader.detect_chip(device, init_baud, 'default_reset', False)
+
+        progress.emit(self.tr('Connected. Chip type: {chip_type}').format(
+                      chip_type=esp.get_chip_description()), 0)
+        esp = esp.run_stub()
+        esp.change_baud(baudrate)
+        erase_flash
+
     @QtCore.Slot()
     def on_expertModeBox_clicked(self):
         self.expertForm.setVisible(self.expertModeBox.checkState())
@@ -321,10 +334,12 @@ class MainWindow(QtWidgets.QMainWindow, mainwindow.Ui_MainWindow):
             item = QtWidgets.QListWidgetItem('{}: {}'.format(address, name.split('.')[0]))
             item.setData(ROLE_DEVICE, 'http://{}:{}'.format(address, info.port))
             self.discoveryList.addItem(item)
-        if name.startswith('smogomierz'):
+
+        """if name.startswith('smogomierz'):
             item = QtWidgets.QListWidgetItem('{}: {}'.format(address, name.split('.')[0]))
             item.setData(ROLE_DEVICE, 'http://{}:{}'.format(address, info.port))
             self.discoveryList.addItem(item)
+        """
 
     @QtCore.Slot(QtWidgets.QListWidgetItem)
     def on_discoveryList_itemDoubleClicked(self, index):
