@@ -338,8 +338,7 @@ class MainWindow(QtWidgets.QMainWindow, mainwindow.Ui_MainWindow):
         """if name.startswith('smogomierz'):
             item = QtWidgets.QListWidgetItem('{}: {}'.format(address, name.split('.')[0]))
             item.setData(ROLE_DEVICE, 'http://{}:{}'.format(address, info.port))
-            self.discoveryList.addItem(item)
-        """
+            self.discoveryList.addItem(item)"""
 
     @QtCore.Slot(QtWidgets.QListWidgetItem)
     def on_discoveryList_itemDoubleClicked(self, index):

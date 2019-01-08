@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="pl">
+<!DOCTYPE TS><TS version="2.0" language="pl" sourcelanguage="">
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../smogomierz-tool.py" line="132"/>
+        <location filename="../smogomierz-tool.py" line="159"/>
         <source>No boards found</source>
         <translation>Nie znaleziono płytki</translation>
     </message>
     <message>
-        <location filename="../smogomierz-tool.py" line="141"/>
+        <location filename="../smogomierz-tool.py" line="168"/>
         <source>Others...</source>
         <translation>Inne...</translation>
     </message>
     <message>
-        <location filename="../smogomierz-tool.py" line="170"/>
+        <location filename="../smogomierz-tool.py" line="197"/>
         <source>No device selected.</source>
         <translation>Nie wybrano urządzenia.</translation>
     </message>
     <message>
-        <location filename="../smogomierz-tool.py" line="174"/>
+        <location filename="../smogomierz-tool.py" line="201"/>
         <source>No version selected.</source>
         <translation>Nie wybrano wersji.</translation>
     </message>
@@ -49,52 +48,52 @@
         <translation>Prędkość portu:</translation>
     </message>
     <message>
-        <location filename="../smogomierz-tool.py" line="189"/>
+        <location filename="../smogomierz-tool.py" line="221"/>
         <source>Invalid version / file does not exist</source>
         <translation>Błędna wersja / plik nie istnieje</translation>
     </message>
     <message>
-        <location filename="../smogomierz-tool.py" line="194"/>
+        <location filename="../smogomierz-tool.py" line="226"/>
         <source>Work in progess...</source>
         <translation>Praca w toku...</translation>
     </message>
     <message>
-        <location filename="../smogomierz-tool.py" line="221"/>
+        <location filename="../smogomierz-tool.py" line="253"/>
         <source>Downloading...</source>
         <translation>Pobieranie...</translation>
     </message>
     <message>
-        <location filename="../smogomierz-tool.py" line="231"/>
+        <location filename="../smogomierz-tool.py" line="304"/>
         <source>Connecting...</source>
         <translation>Łączenie...</translation>
     </message>
     <message>
-        <location filename="../smogomierz-tool.py" line="236"/>
+        <location filename="../smogomierz-tool.py" line="308"/>
         <source>Connected. Chip type: {chip_type}</source>
         <translation>Połączono. Typ układu: {chip_type}</translation>
     </message>
     <message>
-        <location filename="../smogomierz-tool.py" line="254"/>
+        <location filename="../smogomierz-tool.py" line="286"/>
         <source>Writing at 0x{address:08x}...</source>
         <translation>Zapisywanie pod adresem 0x{address:08x}...</translation>
     </message>
     <message>
-        <location filename="../smogomierz-tool.py" line="265"/>
+        <location filename="../smogomierz-tool.py" line="297"/>
         <source>Finished in {time:.2f} seconds. Sensor ID: {sensor_id}</source>
         <translation>Zakończono w {time:.2f} sekundy. ID sensora: {sensor_id}</translation>
     </message>
     <message>
         <location filename="../gui/mainwindow.py" line="236"/>
         <source>Smogomierz Flashing Tool</source>
-        <translation>Smogomierz Flashing Tool</translation>
+        <translation type="obsolete">Smogomierz Flashing Tool</translation>
     </message>
     <message>
-        <location filename="../smogomierz-tool.py" line="52"/>
+        <location filename="../smogomierz-tool.py" line="53"/>
         <source>Loading firmware list...</source>
         <translation>Ładowanie wersji oprogramowania...</translation>
     </message>
     <message>
-        <location filename="../smogomierz-tool.py" line="132"/>
+        <location filename="../smogomierz-tool.py" line="159"/>
         <source>Have you installed &lt;a href=&quot;{drivers_url}&quot;&gt;the drivers&lt;/a&gt;?</source>
         <translation>Czy zainstalowałeś &lt;a href=&quot;{drivers_url}&quot;&gt;sterowniki&lt;/a&gt;?</translation>
     </message>
@@ -139,14 +138,29 @@
         <translation>Serial Monitor</translation>
     </message>
     <message>
-    <location filename="../gui/mainwindow.py" line="237"/>
-    <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Developed by &lt;a href=&quot;https://hs-silesia.pl/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Hackerspace Silesia&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;This software is released under the terms of MIT license. No warranty is provided.&lt;/p&gt;&lt;p&gt;For newest release see: &lt;a href=&quot;https://github.com/hackerspace-silesia/airrohr-firmware-flasher&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/hackerspace-silesia/Smogomierz-Flashing-Tool/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-    <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wykonane przez &lt;a href=&quot;https://hs-silesia.pl/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Hackerspace Silesia&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Ten program wypuszczony jest na warunkach licencji MIT. Brak gwarancji.&lt;/p&gt;&lt;p&gt;Najnowszą wersję znajdziesz na: &lt;a href=&quot;https://github.com/hackerspace-silesia/airrohr-firmware-flasher&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/hackerspace-silesia/Smogomierz-Flashing-Tool/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-</message>
+        <location filename="../gui/mainwindow.py" line="237"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Developed by &lt;a href=&quot;https://hs-silesia.pl/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Hackerspace Silesia&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Based on &lt;a href=&quot;https://github.com/opendata-stuttgart/airrohr-firmware-flasher&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;luftdaten.info flashing tool&lt;/span&gt;&lt;/a&gt; project..&lt;/p&gt;&lt;p&gt;This software is released under the terms of MIT license. No warranty is provided.&lt;/p&gt;&lt;p&gt;For newest release see: &lt;a href=&quot;https://github.com/hackerspace-silesia/airrohr-firmware-flasher&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/hackerspace-silesia/Smogomierz-Flashing-Tool/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="obsolete">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wykonane przez &lt;a href=&quot;https://hs-silesia.pl/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Hackerspace Silesia&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Program ten bazuje na projekcie &lt;a href=&quot;https://github.com/opendata-stuttgart/airrohr-firmware-flasher&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;luftdaten.info flashing tool&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Ten program wypuszczony jest na warunkach licencji MIT. Brak gwarancji.&lt;/p&gt;&lt;p&gt;Najnowszą wersję znajdziesz na: &lt;a href=&quot;https://github.com/hackerspace-silesia/airrohr-firmware-flasher&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/hackerspace-silesia/Smogomierz-Flashing-Tool/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
     <message>
         <location filename="../gui/mainwindow.py" line="238"/>
         <source>About</source>
         <translation>O programie</translation>
+    </message>
+    <message>
+        <location filename="../gui/mainwindow.py" line="222"/>
+        <source>Smogomierz Flashing Tool (v{version})</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../gui/mainwindow.py" line="236"/>
+        <source>&lt;b&gt;Smogomierz Flashing Tool&lt;/b&gt;&lt;br/&gt;Build {build_id}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../gui/mainwindow.py" line="237"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Developed by &lt;a href=&quot;https://hs-silesia.pl/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Hackerspace Silesia&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Based on &lt;a href=&quot;https://github.com/opendata-stuttgart/airrohr-firmware-flasher&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;luftdaten.info flashing tool&lt;/span&gt;&lt;/a&gt; project.&lt;/p&gt;&lt;p&gt;This software is released under the terms of MIT license. No warranty is provided.&lt;/p&gt;&lt;p&gt;For newest release see: &lt;a href=&quot;https://github.com/hackerspace-silesia/Smogomierz-Flashing-Tool/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/hackerspace-silesia/Smogomierz-Flashing-Tool/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

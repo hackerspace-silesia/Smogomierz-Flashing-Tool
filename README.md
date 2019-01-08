@@ -1,6 +1,8 @@
 Smogomierz flashing tool
 ============================
 
+Based on [luftdaten.info flashing tool](https://github.com/opendata-stuttgart/airrohr-firmware-flasher) project.
+
 Binary builds
 -------------
 
