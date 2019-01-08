@@ -34,7 +34,11 @@ class FirmwareListThread(QuickThread):
 
     def target(self):
         """Downloads list of available firmware updates in separate thread."""
-        self.listLoaded.emit(list(indexof(UPDATE_REPOSITORY)))
+        firmwarelist = list(indexof(UPDATE_REPOSITORY))
+        firmwarelist.reverse()
+        #print(firmwarelist)
+        self.listLoaded.emit(firmwarelist)
+        #self.listLoaded.emit(list(indexof(UPDATE_REPOSITORY)))
 
 
 class ZeroconfDiscoveryThread(QuickThread):
