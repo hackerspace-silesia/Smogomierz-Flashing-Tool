@@ -24,7 +24,7 @@ PREFERED_PORTS = [
 ROLE_DEVICE = QtCore.Qt.UserRole + 1
 
 if sys.platform.startswith('darwin'):
-    DRIVERS_URL = 'http://www.wch.cn/downloads/CH341SER_MAC_ZIP.html'
+    DRIVERS_URL = 'https://github.com/adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver'
 elif sys.platform.startswith(('cygwin', 'win32')):
     DRIVERS_URL = 'http://www.wch.cn/downloads/CH341SER_ZIP.html'
 else:
