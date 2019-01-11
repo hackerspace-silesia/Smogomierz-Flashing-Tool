@@ -228,6 +228,26 @@ class MainWindow(QtWidgets.QMainWindow, mainwindow.Ui_MainWindow):
         self.flash_board(self.uploadProgress, device, binary_uri,
                          error=self.errorSignal)
 
+
+    @QtCore.Slot()
+    def on_eraseButton_clicked(self):
+        self.statusbar.clearMessage()
+
+        device = self.boardBox.currentData(ROLE_DEVICE)
+        version = self.versionBox.currentText()
+
+        if not device:
+            self.statusbar.showMessage(self.tr("No device selected."))
+            return
+
+        if self.erase_board.running():
+            self.statusbar.showMessage(self.tr("Erasing in progress..."))
+            return
+
+        self.erase_board(self.uploadProgress, device,
+                         error=self.errorSignal)
+
+
     def cache_download(self, progress, binary_uri):
         """Downloads and caches file with status reports via Qt Signals"""
         cache_fname = os.path.join(
@@ -308,7 +328,13 @@ class MainWindow(QtWidgets.QMainWindow, mainwindow.Ui_MainWindow):
                       chip_type=esp.get_chip_description()), 0)
         esp = esp.run_stub()
         esp.change_baud(baudrate)
-        erase_flash
+        address = 0x0
+
+        # TODO: esp.erase_flash !!
+        #esptool.py --port /dev/cu.wchusbserial1410 erase_flash
+        esp = esp.erase_flash
+
+        progress.emit(self.tr('Erasing complet!'), 100)
 
     @QtCore.Slot()
     def on_expertModeBox_clicked(self):

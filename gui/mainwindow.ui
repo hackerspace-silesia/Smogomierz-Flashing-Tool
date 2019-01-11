@@ -122,10 +122,23 @@
              </sizepolicy>
             </property>
             <property name="text">
-             <string>Upload</string>
+             <string>Upload Firmware</string>
             </property>
            </widget>
           </item>
+            <item>
+             <widget class="QPushButton" name="eraseButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Erase Flash</string>
+              </property>
+             </widget>
+            </item>
           <item>
            <widget class="QCheckBox" name="expertModeBox">
             <property name="text">
