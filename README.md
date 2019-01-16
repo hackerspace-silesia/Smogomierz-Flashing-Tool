@@ -3,6 +3,7 @@ Smogomierz flashing tool
 
 + Smogomierz Flashing Tool allows you to upload the latest version of the firmware to [Smogomierz](https://github.com/hackerspace-silesia/Smogomierz).
 + Detects a Smogomierz in a wifi network and gives its IP address.
++ Erasing flash memory in ESP8266.
 
 Based on [luftdaten.info flashing tool](https://github.com/opendata-stuttgart/airrohr-firmware-flasher) project.
 

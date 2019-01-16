@@ -332,7 +332,9 @@ class MainWindow(QtWidgets.QMainWindow, mainwindow.Ui_MainWindow):
 
         # TODO: esp.erase_flash !!
         #esptool.py --port /dev/cu.wchusbserial1410 erase_flash
-        esp = esp.erase_flash
+        #esp = esp.erase_flash
+        #esp.erase_flash
+        esp.erase_flash()
 
         progress.emit(self.tr('Erasing complet!'), 100)
 

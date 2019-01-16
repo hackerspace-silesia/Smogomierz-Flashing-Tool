@@ -173,7 +173,7 @@
         <translation type="unfinished">Kasowanie w toku...</translation>
     </message>
     <message>
-        <location filename="../smogomierz-tool.py" line="338"/>
+        <location filename="../smogomierz-tool.py" line="339"/>
         <source>Erasing complet!</source>
         <translation type="unfinished">Kasowanie zakończone!</translation>
     </message>
