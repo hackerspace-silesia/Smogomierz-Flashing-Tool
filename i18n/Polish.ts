@@ -68,12 +68,12 @@
         <translation>Pobieranie...</translation>
     </message>
     <message>
-        <location filename="../smogomierz-tool.py" line="324"/>
+        <location filename="../smogomierz-tool.py" line="327"/>
         <source>Connecting...</source>
         <translation>Łączenie...</translation>
     </message>
     <message>
-        <location filename="../smogomierz-tool.py" line="328"/>
+        <location filename="../smogomierz-tool.py" line="331"/>
         <source>Connected. Chip type: {chip_type}</source>
         <translation>Połączono. Typ układu: {chip_type}</translation>
     </message>
@@ -83,9 +83,9 @@
         <translation>Zapisywanie pod adresem 0x{address:08x}...</translation>
     </message>
     <message>
-        <location filename="../smogomierz-tool.py" line="317"/>
-        <source>Finished in {time:.2f} seconds. Sensor ID: {sensor_id}</source>
-        <translation>Zakończono w {time:.2f} sekundy. ID sensora: {sensor_id}</translation>
+        <location filename="../smogomierz-tool.py" line="320"/>
+        <source>Finished in {time:.2f} seconds. Name: {sensor_id}</source>
+        <translation>Zakończono w {time:.2f} sekundy. Nazwa: {sensor_id}</translation>
     </message>
     <message>
         <location filename="../gui/mainwindow.py" line="236"/>
@@ -173,7 +173,7 @@
         <translation type="unfinished">Kasowanie w toku...</translation>
     </message>
     <message>
-        <location filename="../smogomierz-tool.py" line="339"/>
+        <location filename="../smogomierz-tool.py" line="343"/>
         <source>Erasing complet!</source>
         <translation type="unfinished">Kasowanie zakończone!</translation>
     </message>

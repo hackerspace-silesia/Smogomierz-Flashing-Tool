@@ -312,10 +312,13 @@ class MainWindow(QtWidgets.QMainWindow, mainwindow.Ui_MainWindow):
             seq += 1
             written += len(block)
         t = time.time() - t
-
+        deviceName = str(hex(esp.chip_id()))
+        deviceName = deviceName.replace("0x", "")
+        deviceName = deviceName.upper()
+        deviceName = "Smogomierz-" + deviceName
         progress.emit(self.tr(
-            'Finished in {time:.2f} seconds. Sensor ID: {sensor_id}').format(
-                time=t, sensor_id=esp.chip_id()), 100)
+            'Finished in {time:.2f} seconds. Name: {sensor_id}').format(
+                time=t, sensor_id=(deviceName)), 100)
 
     @QuickThread.wrap
     def erase_board(self, progress, device, baudrate=460800):
